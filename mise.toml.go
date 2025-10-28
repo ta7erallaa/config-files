@@ -19,6 +19,7 @@ mkdir -p {{vars.BUILD_DIR}}
 """
 sources = ["./*.go"]
 outputs = ["{{vars.BUILD_DIR}}/{{vars.BINARY_NAME}}"]
+quiet = true // hide task running command.
 
 [tasks.run]
 description = "Run {{vars.BINARY_NAME}}"
